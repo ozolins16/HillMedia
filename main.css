@@ -560,6 +560,11 @@ nav {
     margin: 10px;
 }
 
+a[href^=tel] {
+    text-decoration: inherit;
+    color: inherit;
+}
+
 .adrese, .epasts {
     margin-left: 0;
 }
