@@ -15,6 +15,10 @@ html {
     padding: 0;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 span {
     all: unset;
 }
@@ -26,7 +30,6 @@ h2 {
 
 body {
     background-color: #121212;
-    overflow-x: hidden;
 }
 
 #pakalpojumi, #partneri, #par-mums,#form{
@@ -182,6 +185,7 @@ nav {
 .portfolio{
     display: flex;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .image-container{
@@ -253,6 +257,7 @@ nav {
 
 .pakalpojumi{
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 .par-mums-h1, .pakalpojumi-h1{
@@ -452,6 +457,7 @@ nav {
 
 .par-mums {
     background-color: #f4f4f4;
+    overflow-x: hidden;
 }
 
 .komanda {
@@ -816,7 +822,7 @@ form {
         background-repeat: no-repeat;
         background-position-y: top;
         background-position-x: 30%;
-        background-size: 1000px;
+        background-size: 1100px;
         opacity: 0.5;
     }
 
