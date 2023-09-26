@@ -560,9 +560,9 @@ nav {
     margin: 10px;
 }
 
-a[href^=tel] {
-    text-decoration: inherit;
-    color: inherit;
+.telefons a{
+    color: #f4f4f4;
+    text-decoration: none;
 }
 
 .adrese, .epasts {
@@ -584,17 +584,17 @@ a[href^=tel] {
     transition: 500ms;
 }
 
-.adrese a:hover{
+.adrese a:hover, .telefons a:hover{
     transition: all 500ms;
     color: #cc2c47;
 }
 
-.adrese a:visited:hover{
+.adrese a:visited:hover, .telefons a:visited:hover{
     transition: all 500ms;
     color: #cc2c47;
 }
 
-.adrese a:visited {
+.adrese a:visited, .telefons a:visited {
     color: #f4f4f4;
     text-decoration: none;
 }
