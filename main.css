@@ -1,0 +1,916 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    all: unset;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #121212;
+    overflow-x: hidden;
+}
+
+#pakalpojumi, #partneri, #par-mums,#form{
+    scroll-margin-top: 80px;
+}
+
+h1, h2, h4{
+    font-family: 'Oswald', sans-serif;
+}
+
+.hidden-left {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.hidden-right{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(+100%);
+    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* video */
+
+/* #portfolio-video{
+    display: none;
+    width: 100vw;
+    transition-property: bottom right;
+    transition: 0.5s;
+}
+
+#corner-video{
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    right: 0;
+    width: 300px;
+    z-index: 999;
+    transition-property: bottom right;
+    transition: 0.5s;
+}
+
+#minimize img{
+    height: 64px;
+    cursor: pointer;
+}
+
+#minimize{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999;
+} */
+
+
+/* nav */
+
+nav li,
+nav a,
+button {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color: #121212;
+    text-decoration: none;
+}
+
+nav {
+    background-color: #f4f4f4;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 80px;
+}
+
+.hm {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Anton', sans-serif;
+    font-weight: 400;
+    color: #cc2c47;
+    font-size: 30px;
+}
+
+.nav-links {
+    list-style: none;
+    justify-self: center;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all 0.5s ease 0s;
+}
+
+.nav-links li a:hover {
+    transition: all 0.5s ease 0s;
+    color: #cc2c47;
+}
+
+.nav-icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-ig, .nav-fb{
+    margin: 0 20px;
+    height: 20px;
+}
+
+.nav-button{
+    display: none;
+}
+
+/* Hamburger */
+
+.nav-button{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #cc2c47;
+}
+
+/* Portfolio */
+
+.portfolio{
+    display: flex;
+    width: 100%;
+}
+
+.image-container{
+    background-image: url(Backgrounds/harry-cunningham-7L2h4zTYiNI-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 92vh;
+    width: 100%;
+    opacity: 0.5;
+}
+
+.portfolio-text h2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    width: max-content;
+    font-size: 60px;
+    width: 600px;
+    color: #f4f4f4;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 100px;
+    text-shadow: 1px 1px 5px #121212;
+    text-transform: uppercase;
+}
+
+/* 
+.play-btn{
+    position: absolute;
+    top: 64%;
+    left: 24%;
+    text-align: center;
+    color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid #cc2c47;
+    padding: 10px 15px;
+    padding-right: 20px;
+    transition: all 500ms;
+    font-weight: bold;
+}
+
+.play-btn img{
+    height: 30px;
+    margin: 5px;
+    filter: invert(42%) sepia(84%) saturate(6930%) hue-rotate(337deg) brightness(85%) contrast(86%);
+}
+
+.play-btn:hover {
+    transition: all 500ms;
+    border: 1px solid #f4f4f4;
+    color: #cc2c47;
+    font-weight: bold;
+    background-color: #f4f4f4;
+    transform: scale(0.95);
+} */
+
+/* Pakalpojumi */
+
+.pakalpojumi{
+    background-color: #f4f4f4;
+}
+
+.par-mums-h1, .pakalpojumi-h1{
+    color: #121212;
+    width: 500px;
+    border-bottom: #cc2c47 3px solid;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    font-family: 'oswald', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.pakalpojumi-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.soc-tikli-div, .satura-veidosana-div{
+    text-align: center;
+    width: 500px;
+    padding: 30px;
+    margin: 100px 5rem;
+    /* background-color: #212224; */
+    transition: all 500ms;
+    font-family: 'Hanken Grotesk', sans-serif;
+    color: #121212;
+}
+
+.soc-tikli-text-div, .satura-veidosana-text-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.8em;
+}
+
+.satura-veidosana-div h2, .soc-tikli-div h2{
+    font-weight: 700;
+    margin-top: 20px;
+    color: #cc2c47;
+    font-size: 25px;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.satura-veidosana-div p, .soc-tikli-div p{
+    font-weight: 400;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Partneri */
+
+.partneri-h1, .klienti-h1{
+    color: #f4f4f4;
+    width: 500px;
+    border-bottom: #cc2c47 3px solid;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    font-family: 'oswald', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+/* .wrapper{
+    position: relative;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+.wrapper i {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    background: #fff;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    line-height: 46px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+}
+
+.wrapper i:first-child{
+    left: -50px;
+    display: block;
+}
+
+.wrapper i:last-child{
+    right: -50px;
+} 
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img {
+    pointer-events: none;
+}
+
+
+.carousel img {
+    height: 400px;
+    object-fit: cover;
+    padding: 10px;
+    width: calc(100% / 3) ;
+}
+
+.carousel img:first-child{
+    margin-left: 0px;
+    padding: 0;
+} */
+
+
+.partneri-logo{
+    display: grid;
+    grid-template-columns: repeat(5, 10%);
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 70%;
+    margin: 50px auto;
+}
+.partneri-logo-1, .partneri-logo-2, .partneri-logo-3, .partneri-logo-4, .partneri-logo-5{
+    height: 100px;
+    width: 100px;
+}
+.partneri-logo-1{
+    background-image: url(Klienti/JDFS.png);
+    grid-column: 2;
+    grid-row: 1;
+}
+.partneri-logo-2{
+    background-image: url(Klienti/MG.png);
+    grid-column: 4;
+    grid-row: 1;
+}
+.partneri-logo-3{
+    background-image: url(Klienti/Synotip.png);
+    grid-column: 1;
+    grid-row: 2;
+}
+.partneri-logo-4{
+    background-image: url(Klienti/Joker.png);
+    grid-column: 3;
+    grid-row: 2;
+}
+.partneri-logo-5{
+    background-image: url(Klienti/SKY.png);
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.partneri-logo img{
+    margin-top: 2rem;
+    padding: 0 7rem;
+}
+
+.partneri{
+    padding: 0;
+    margin: auto;
+    width: 100%;
+    background-color: #121212;
+}
+
+/* Par mums */
+
+.par-mums {
+    background-color: #f4f4f4;
+}
+
+.komanda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 70%;
+    margin: auto;
+    font-family: 'Hanken Grotesk', sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.komanda div{
+    margin: 100px auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.komanda h1, .komanda h2{
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.komanda p{
+    font-weight: 400;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.komandas-bildes {
+    border-radius: 100%;
+    height: 220px;
+    margin: 0 60px;
+    transition: all 500ms;
+    box-shadow: 0.5px 0.5px 5px #121212;
+}
+
+.vardi {
+    margin-top: 15px;
+    font-size: 19px;
+    text-align: center;
+    font-weight: 700;
+    color: #cc2c47;
+}
+
+.darbs {
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+    color: #121212;
+}
+
+
+
+/* Contact us */
+
+.contact-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+    margin-top: 0;
+    padding: 100px;
+    height: 500px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+}
+
+.contact-us-left-div{
+        height: 350px;
+}
+
+.contact-us-left-div h1{
+    color: #f4f4f4;
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: 'oswald', sans-serif;
+}
+
+.adrtel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.adrese, .telefons, .epasts{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 230px;
+    margin: 10px;
+}
+
+.adrese, .epasts {
+    margin-left: 0;
+}
+
+.adrese img, .telefons img, .epasts img, .fb, .ig{
+    height: 30px;
+}
+
+.adrese h3, .telefons h3, .epasts h3{
+    color: #edf0f1;
+    padding: 20px 10px;
+}
+
+.adrese a, .telefons p, .epasts p{
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.adrese a:hover{
+    transition: all 500ms;
+    color: #cc2c47;
+}
+
+.adrese a:visited:hover{
+    transition: all 500ms;
+    color: #cc2c47;
+}
+
+.adrese a:visited {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: right;
+    align-items: center;  
+}
+
+.ig, .fb{
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.fb:hover, .ig:hover{
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 30px;
+}
+
+.contact-us-inputs input, .contact-us-inputs textarea{
+    height: 35px;
+    width: 400px;
+    border-radius: 4px;
+    background-color: #3f4044;
+    border: none;
+    color: #f4f4f4;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-us-inputs label{
+    color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+
+.lab{
+    padding-top: 20px;
+}
+
+.contact-us-inputs input:focus, .contact-us-inputs textarea:focus{
+    transition: all 300ms;
+    outline: 2px solid #cc2c47;
+}
+
+#message{
+    height: 70px;
+}
+
+.send{
+    width: 25%;
+    margin: 20px 0;
+    padding: 9px 9px;
+    background-color: #121212;
+    color: #f4f4f4;
+    border: #cc2c47 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.send:hover{
+    background-color: #cc2c47;
+    transition: all 0.3s ease 0s;
+    overflow: visible;
+    box-shadow: 0 0 15px #cc2c47;
+}
+
+
+/* On phone */
+
+@media screen and (max-width: 1300px) {
+
+        .portfolio-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .portfolio-text h2{
+            top: 45%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .play-btn{
+            top: 60%;
+            left: 43%;
+        }
+
+        .soc-tikli-div, .satura-veidosana-div{
+            margin-left: 0;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        .partneri-logo {
+            width: 100%;
+        }
+
+        .komanda{
+            width: 95%;
+        }
+
+        .komanda div{
+            width: 350px;
+        }
+
+        .contact-us{
+            flex-wrap: wrap;
+            height: max-content;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .contact-us-left-div{
+            justify-content: center;
+            width: 400px;
+        }
+
+        .adrese,.telefons,.epasts{
+            width: 500px;
+            margin: 0;
+        }
+
+        .ig,.fb{
+            margin: 0;
+            margin-top: 15px;
+        }
+
+        .ig{
+            margin-right: 15px;
+        }
+
+        form {
+            margin-top: 30px;
+        }
+
+}
+
+@media(max-width: 800px) {
+    
+    nav {
+        justify-content: space-between;
+        padding: 0 30px;
+        position: sticky;
+    }
+
+    .nav-fb, .nav-ig{
+        display: none;
+    }
+
+    .nav-button{
+        display: block;
+    }
+
+    .nav-button.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav-button.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .nav-button.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links{
+        display: flex;
+        position: fixed;
+        left: 200%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100vw;
+        text-align: center;
+        transition: 0.3s;
+        background-color: #f4f4f4;
+    }
+
+    .nav-links li{
+        margin: 16px auto;
+        font-size: 30px;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    .pakalpojumi-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .satura-veidosana-div{
+        margin-top: 70px;
+    }
+    .soc-tikli-div{
+        margin-top: 30px;
+    }
+    .satura-veidosana-div, .soc-tikli-div{
+        height: 180px;
+        align-items: center;
+    }
+
+    .komanda{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .komanda div{
+        height: 300px;
+    }
+}
+
+@media(max-width: 450px) {
+
+    .image-container{
+        background-image: url(Backgrounds/harry-cunningham-7L2h4zTYiNI-unsplash.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position-y: top;
+        background-position-x: 30%;
+        background-size: 1000px;
+        opacity: 0.5;
+    }
+
+    .image-container{
+        height: 92vh;
+        width: 100vw;
+    }
+
+    .portfolio-text h2{
+        font-size: 50px;
+        width: 350px;
+        top: 50%;
+        line-height: 90px;
+    }
+
+    .pakalpojumi-h1, .partneri-h1, .par-mums-h1{
+        width: 300px;
+        margin: auto;
+        padding: 50px;
+        font-size: 40px;
+    }
+
+    .soc-tikli-div, .satura-veidosana-div{
+        width: 90vw;
+        height: min-content;
+        margin: 30px auto;
+    }
+
+    .soc-tikli-div{
+        margin-bottom: 50px;
+    }
+
+    .partneri-logo{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 100vw;
+        margin: 30px auto;
+        padding: 0;
+    }
+
+    .partneri-logo img{
+        padding: 0px;
+    }
+
+    .partneri-logo-1, .partneri-logo-2, .partneri-logo-3, .partneri-logo-4, .partneri-logo-5{
+        height: 100px;
+        width: 100px;
+    }
+
+    .partneri-logo-3{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .partneri-logo-4{
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .partneri-logo-5{
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    .komanda div{
+        width: 95vw;
+    }
+
+    .contact-us{
+        height: fit-content;
+        padding: 60px;
+    }
+
+    .contact-us-left-div{
+        text-align: center;
+        height: fit-content;
+    }
+
+    .adrtel{
+        text-align: center;
+        padding: auto;
+        margin: 10px auto;
+        width: 90vw;
+    }
+
+    form {
+        width: 90vw;
+    }
+
+    .contact-us-inputs input, .contact-us-inputs textarea{
+        width: 90vw;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
