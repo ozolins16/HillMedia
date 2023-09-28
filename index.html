@@ -20,24 +20,18 @@
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="script.js" defer></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Hill media</title>
 </head>
 <body>
-    <!-- <video id="portfolio-video">
-        <source src="video.mp4" loop controls>
-    </video> -->
-    <!-- <a id="minimize"><img src="Icons/shrink.png"></a> -->
-            <!-- <a class="logo-a"><img src="Content/Hill-Media-logo-horiz (1).png" class="logo"></a> -->
             <nav>
-                    <h1 class="hm">Hill Media</h1>
+                    <h1><a href="#" class="hm">Hill Media</a></h1>
                     <ul class="nav-links">
                         <li><a href="#" class="nav-link">Sākums</a></li>
                         <li><a href="#pakalpojumi" class="nav-link">Pakalpojumi</a></li>
                         <li><a href="#partneri" class="nav-link">Partneri</a></li>
                         <li><a href="#par-mums" class="nav-link">Par mums</a></li>
-                        <li><a href="#form" class="nav-link">Kontakti</a></li>
+                        <li><a href="#contact-us" class="nav-link">Kontakti</a></li>
                     </ul>
                     <div class="nav-icon-container">
                         <a target="_blank" href="https://www.instagram.com/hill_media_/"><img src="Icons/instagram-red.png" title="Instagram" class="nav-ig"></a>
@@ -55,7 +49,6 @@
             <div class=" portfolio-text">
                 <h2>Lieliski stāsti ir tiem, kuri tos var parādīt!</h2>
             </div>
-            <!-- <a class="play-btn"><img src="Icons/icons8-play-48.png">Portfolio Video</a> -->
         </section>
     
         <section class="pakalpojumi" id="pakalpojumi">
@@ -80,20 +73,10 @@
         <section class="partneri" id="partneri">
             <h2 class="partneri-h1">Partneri</h2>
             <div class="wrapper">
-                <!-- <div class="carousel">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <img src="content/mg1.png" class="carousel-item" id="first-img" draggable="false">
-                    <img src="content/mg2.png" class="carousel-item" draggable="false">
-                    <img src="content/mg3.JPG" class="carousel-item" draggable="false">
-                    <img src="content/mg4.png" class="carousel-item" draggable="false">
-                    <img src="content/mg5.png" class="carousel-item" draggable="false">
-                    <img src="content/mg6.png" class="carousel-item" draggable="false">
-                    <i id="right" class="fa-solid fa-angle-right"></i>
-                </div> -->
                 <div class="partneri-logo">
-                    <a target="_blank" href="https://jdfs.lv/" class="partneri-logo-1"></a>
+                    <a target="_blank" href="https://my.synottip.lv/" class="partneri-logo-1"></a>
                     <a target="_blank" href="https://www.melnagovs.lv/" class="partneri-logo-2"></a>
-                    <a target="_blank" href="https://my.synottip.lv/" class="partneri-logo-3"></a>
+                    <a target="_blank" href="https://jdfs.lv/" class="partneri-logo-3"></a>
                     <a target="_blank" href="https://casino.joker.lv/" class="partneri-logo-4"></a>
                     <a target="_blank" href="https://www.sky.lv/" class="partneri-logo-5"></a>
                 </div>
@@ -106,17 +89,17 @@
                 <image src="Komanda/Pakalns.png" class="komandas-bildes"></image>
                 <h1 class="vardi">Jānis Pakalns</h1>
                 <h2 class="darbs">Uzņēmuma vadītājs</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p>Kā TV3 sporta ziņu vadītājs un sporta komentētājs, ir ieguvis plašu pieredzi digitālā satura veidošanā. Ir sadarbojies ar veiksmīgiem uzņēmumeim, kuriem palīdzējis izcelties sociālajā vidē, izveidojot ilgtspējīgu klientu uzticību un attiecības.</p>
             </div>
             <div class="krisjana-div hidden-right">
                 <image src="Komanda/Krisjanis.png" class="komandas-bildes"></image>
                 <h1 class="vardi">Krišjānis Ozoliņš</h1>
                 <h2 class="darbs">Video projektu vadītājs</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p>Ar inovatīvu pieeju nodrošina, ka katrs projekts atspoguļo jaunākās sociālo tīklu tendences. Spēj video saturam radīt pievilcību un profesionālu formu, sasniedzot plašu un uzticamu auditoriju sociālajos tīklos.</p>
             </div>
         </div>
     </section>
-    <section class="contact-us">
+    <section class="contact-us" id="contact-us">
         <div class="contact-us-left-div">
                 <h1>Sazinies ar mums</h1>
             <div class="adrtel">
@@ -128,7 +111,7 @@
                 <div class="telefons">
                     <img src="Icons/telephone-red.png">
                     <h3>Telefons:</h3>
-                    <a>+371 25450563</a>
+                    <p>+371 25450563</p>
                 </div>
                 <div class="epasts">
                     <img src="Icons/email-red.png">
@@ -142,13 +125,15 @@
             </div>
         </div>
         <div class="contact-us-inputs">
-            <form onsubmit="sendEmail()" id="form">
-                <label for="text">Vārds, uzvārds</label>
-                <input type="text" id="text" placeholder=" Ievadiet vārdu, uzvārdu">
+            <form action="https://formsubmit.co/ozolins.krisjanis10@gmail.com" method="POST" id="form">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://ozolins16.github.io/TestHillMedia/main.html/">
+                <label for="name">Vārds, uzvārds</label>
+                <input type="text" name="name" placeholder=" Ievadiet vārdu, uzvārdu" required>
                 <label for="email" class="lab">E-pasts</label>
-                <input type="email" id="email" placeholder=" Ievadiet e-pastu">
+                <input type="email" name="email" placeholder=" Ievadiet e-pastu" required>
                 <label for="message" class="lab">Ziņojums</label>
-                <textarea type="text" id="message" placeholder=" Ievadiet ziņojumu" id="message"></textarea>
+                <textarea type="text" name="message" placeholder=" Ievadiet ziņojumu" id="message"></textarea>
                 <button type="submit" class="send">Sūtīt</button>
             </form>
         </div>
