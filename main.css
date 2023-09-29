@@ -690,12 +690,11 @@ form {
 @media(max-width: 450px) {
 
     .image-container{
-        background-image: url(Backgrounds/harry-cunningham-7L2h4zTYiNI-unsplash.jpg);
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position-y: center;
         background-position-x: 30%;
-        background-size: 1500px;
+        background-size:cover;
         opacity: 0.5;
     }
 
