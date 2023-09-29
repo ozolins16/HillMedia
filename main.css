@@ -692,9 +692,7 @@ form {
     .image-container{
         background-attachment: fixed;
         background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: 30%;
-        background-size:cover;
+        background-size: contain;
         opacity: 0.5;
     }
 
