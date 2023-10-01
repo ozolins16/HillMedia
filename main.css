@@ -695,7 +695,7 @@ form {
         background-repeat: no-repeat;
         background-position-y: center;
         background-position-x: 20%;
-        background-size: 400vw;
+        background-size: cover;
         opacity: 0.5;
     }
 
