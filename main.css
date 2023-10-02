@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
 html {
     scroll-behavior: smooth;
 }
@@ -15,7 +14,7 @@ html {
     padding: 0;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
@@ -32,11 +31,16 @@ body {
     background-color: #121212;
 }
 
-#pakalpojumi, #partneri, #par-mums,#contact-us{
+#pakalpojumi,
+#partneri,
+#par-mums,
+#contact-us {
     scroll-margin-top: 80px;
 }
 
-h1, h2, h4{
+h1,
+h2,
+h4 {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -47,18 +51,19 @@ h1, h2, h4{
     transition: all 1s;
 }
 
-.hidden-right{
+.hidden-right {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(+100%);
     transition: all 1s;
 }
 
-.show{
+.show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
+
 
 /* nav */
 
@@ -114,28 +119,30 @@ nav {
     color: #cc2c47;
 }
 
-.nav-icon-container{
+.nav-icon-container {
     display: flex;
     justify-content: center;
 }
 
-.nav-ig, .nav-fb{
+.nav-ig,
+.nav-fb {
     margin: 0 20px;
     height: 20px;
 }
 
-.nav-button{
+.nav-button {
     display: none;
 }
 
+
 /* Hamburger */
 
-.nav-button{
+.nav-button {
     display: none;
     cursor: pointer;
 }
 
-.bar{
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -145,15 +152,16 @@ nav {
     background-color: #cc2c47;
 }
 
+
 /* Portfolio */
 
-.portfolio{
+.portfolio {
     display: flex;
     width: 100%;
     overflow-x: hidden;
 }
 
-.image-container{
+.image-container {
     background-image: url(Backgrounds/harry-cunningham-7L2h4zTYiNI-unsplash.jpg);
     background-attachment: fixed;
     background-position: center;
@@ -183,14 +191,16 @@ nav {
     text-transform: uppercase;
 }
 
+
 /* Pakalpojumi */
 
-.pakalpojumi{
+.pakalpojumi {
     background-color: #f4f4f4;
     overflow-x: hidden;
 }
 
-.par-mums-h1, .pakalpojumi-h1{
+.par-mums-h1,
+.pakalpojumi-h1 {
     color: #121212;
     width: 500px;
     border-bottom: #cc2c47 3px solid;
@@ -202,15 +212,15 @@ nav {
     font-size: 50px;
 }
 
-.pakalpojumi-container{
+.pakalpojumi-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-
-.soc-tikli-div, .satura-veidosana-div{
+.soc-tikli-div,
+.satura-veidosana-div {
     text-align: center;
     width: 500px;
     padding: 30px;
@@ -220,7 +230,8 @@ nav {
     color: #121212;
 }
 
-.soc-tikli-text-div, .satura-veidosana-text-div{
+.soc-tikli-text-div,
+.satura-veidosana-text-div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -228,7 +239,8 @@ nav {
     padding: 0 1.8em;
 }
 
-.satura-veidosana-div h2, .soc-tikli-div h2{
+.satura-veidosana-div h2,
+.soc-tikli-div h2 {
     font-weight: 700;
     margin-top: 20px;
     color: #cc2c47;
@@ -236,15 +248,18 @@ nav {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.satura-veidosana-div p, .soc-tikli-div p{
+.satura-veidosana-div p,
+.soc-tikli-div p {
     font-weight: 400;
     margin-top: 10px;
     font-size: 18px;
 }
 
+
 /* Partneri */
 
-.partneri-h1, .klienti-h1{
+.partneri-h1,
+.klienti-h1 {
     color: #f4f4f4;
     width: 500px;
     border-bottom: #cc2c47 3px solid;
@@ -256,9 +271,9 @@ nav {
     font-size: 50px;
 }
 
-.partneri-logo{
+.partneri-logo {
     display: grid;
-    grid-template-columns: 10%, 15%, 10%, 15%,10%;
+    grid-template-columns: 10%, 15%, 10%, 15%, 10%;
     grid-template-rows: 1fr 1fr;
     align-items: center;
     justify-content: space-evenly;
@@ -266,11 +281,17 @@ nav {
     width: 70%;
     margin: 50px auto;
 }
-.partneri-logo-1, .partneri-logo-2, .partneri-logo-3, .partneri-logo-4, .partneri-logo-5{
+
+.partneri-logo-1,
+.partneri-logo-2,
+.partneri-logo-3,
+.partneri-logo-4,
+.partneri-logo-5 {
     height: 100px;
     width: 100px;
 }
-.partneri-logo-1{
+
+.partneri-logo-1 {
     background-image: url(Klienti/Synotip.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -280,7 +301,8 @@ nav {
     height: 150px;
     width: 200px;
 }
-.partneri-logo-2{
+
+.partneri-logo-2 {
     background-image: url(Klienti/MG_white.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -290,7 +312,8 @@ nav {
     height: 150px;
     width: 200px;
 }
-.partneri-logo-3{
+
+.partneri-logo-3 {
     background-image: url(Klienti/JDFS.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -298,7 +321,8 @@ nav {
     grid-column: 1;
     grid-row: 2;
 }
-.partneri-logo-4{
+
+.partneri-logo-4 {
     background-image: url(Klienti/Joker_white.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -306,7 +330,8 @@ nav {
     grid-column: 3;
     grid-row: 2;
 }
-.partneri-logo-5{
+
+.partneri-logo-5 {
     background-image: url(Klienti/Sky_white.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -315,17 +340,18 @@ nav {
     grid-row: 2;
 }
 
-.partneri-logo img{
+.partneri-logo img {
     margin-top: 2rem;
     padding: 0 7rem;
 }
 
-.partneri{
+.partneri {
     padding: 0;
     margin: auto;
     width: 100%;
     background-color: #121212;
 }
+
 
 /* Par mums */
 
@@ -346,7 +372,7 @@ nav {
     font-size: 15px;
 }
 
-.komanda div{
+.komanda div {
     margin: 100px auto;
     width: 450px;
     display: flex;
@@ -355,11 +381,12 @@ nav {
     justify-content: center;
 }
 
-.komanda h1, .komanda h2{
+.komanda h1,
+.komanda h2 {
     font-family: 'Hanken Grotesk', sans-serif;
 }
 
-.komanda p{
+.komanda p {
     font-weight: 400;
     margin-top: 15px;
     font-size: 18px;
@@ -388,10 +415,9 @@ nav {
 }
 
 
-
 /* Contact us */
 
-.contact-us{
+.contact-us {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -405,11 +431,11 @@ nav {
     background-color: #121212;
 }
 
-.contact-us-left-div{
-        height: 350px;
+.contact-us-left-div {
+    height: 350px;
 }
 
-.contact-us-left-div h1{
+.contact-us-left-div h1 {
     color: #f4f4f4;
     font-size: 45px;
     padding: 0;
@@ -418,14 +444,16 @@ nav {
     font-family: 'oswald', sans-serif;
 }
 
-.adrtel{
+.adrtel {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 500px;
 }
 
-.adrese, .telefons, .epasts{
+.adrese,
+.telefons,
+.epasts {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -433,57 +461,71 @@ nav {
     margin: 10px;
 }
 
-.telefons a{
+.telefons a {
     color: #f4f4f4;
     text-decoration: none;
 }
 
-.adrese, .epasts {
+.adrese,
+.epasts {
     margin-left: 0;
 }
 
-.adrese img, .telefons img, .epasts img, .fb, .ig{
+.adrese img,
+.telefons img,
+.epasts img,
+.fb,
+.ig {
     height: 30px;
 }
 
-.adrese h3, .telefons h3, .epasts h3{
+.adrese h3,
+.telefons h3,
+.epasts h3 {
     color: #edf0f1;
     padding: 20px 10px;
 }
 
-.adrese a, .telefons p, .epasts p{
+.adrese a,
+.telefons p,
+.epasts p {
     color: #f4f4f4;
     text-decoration: none;
     transition: 500ms;
 }
 
-.adrese a:hover, .telefons a:hover{
+.adrese a:hover,
+.telefons a:hover {
     transition: all 500ms;
     color: #cc2c47;
 }
 
-.adrese a:visited:hover, .telefons a:visited:hover{
+.adrese a:visited:hover,
+.telefons a:visited:hover {
     transition: all 500ms;
     color: #cc2c47;
 }
 
-.adrese a:visited, .telefons a:visited {
+.adrese a:visited,
+.telefons a:visited {
     color: #f4f4f4;
     text-decoration: none;
 }
 
-.icon-container{
+.icon-container {
     display: flex;
     justify-content: right;
-    align-items: center;  
+    align-items: center;
 }
 
-.ig, .fb{
+.ig,
+.fb {
     margin: 0 10px;
     transition: color 0.3s ease-in-out;
 }
 
-.fb:hover, .ig:hover{
+.fb:hover,
+.ig:hover {
     cursor: pointer;
 }
 
@@ -494,7 +536,8 @@ form {
     margin-top: 30px;
 }
 
-.contact-us-inputs input, .contact-us-inputs textarea{
+.contact-us-inputs input,
+.contact-us-inputs textarea {
     height: 35px;
     width: 400px;
     border-radius: 4px;
@@ -505,27 +548,28 @@ form {
     font-family: 'Roboto', sans-serif;
 }
 
-.contact-us-inputs label{
+.contact-us-inputs label {
     color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
     padding-bottom: 10px;
     font-weight: 700;
 }
 
-.lab{
+.lab {
     padding-top: 20px;
 }
 
-.contact-us-inputs input:focus, .contact-us-inputs textarea:focus{
+.contact-us-inputs input:focus,
+.contact-us-inputs textarea:focus {
     transition: all 300ms;
     outline: 2px solid #cc2c47;
 }
 
-#message{
+#message {
     height: 70px;
 }
 
-.send{
+.send {
     width: 25%;
     margin: 20px 0;
     padding: 9px 9px;
@@ -537,7 +581,7 @@ form {
     transition: all 0.3s ease 0s;
 }
 
-.send:hover{
+.send:hover {
     background-color: #cc2c47;
     transition: all 0.3s ease 0s;
     overflow: visible;
@@ -548,98 +592,88 @@ form {
 /* On phone */
 
 @media screen and (max-width: 1400px) {
-
-        .portfolio-text {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .portfolio-text h2{
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-        }
-
-        .soc-tikli-div, .satura-veidosana-div{
-            margin-left: 0;
-            margin-right: 0;
-            padding: 0;
-        }
-
-        .partneri-logo {
-            width: 100%;
-        }
-
-        .komanda{
-            width: 95%;
-        }
-
-        .komanda div{
-            width: 350px;
-        }
-
-        .contact-us{
-            flex-wrap: wrap;
-            height: max-content;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .contact-us-left-div{
-            justify-content: center;
-            width: 400px;
-        }
-
-        .adrese,.telefons,.epasts{
-            width: 500px;
-            margin: 0;
-        }
-
-        .ig,.fb{
-            margin: 0;
-            margin-top: 15px;
-        }
-
-        .ig{
-            margin-right: 15px;
-        }
-
-        form {
-            margin-top: 30px;
-        }
-
+    .portfolio-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio-text h2 {
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .soc-tikli-div,
+    .satura-veidosana-div {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+    .partneri-logo {
+        width: 100%;
+    }
+    .komanda {
+        width: 95%;
+    }
+    .komanda div {
+        width: 350px;
+    }
+    .contact-us {
+        flex-wrap: wrap;
+        height: max-content;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-us-left-div {
+        justify-content: center;
+        width: 400px;
+    }
+    .adrese,
+    .telefons,
+    .epasts {
+        width: 500px;
+        margin: 0;
+    }
+    .ig,
+    .fb {
+        margin: 0;
+        margin-top: 15px;
+    }
+    .ig {
+        margin-right: 15px;
+    }
+    form {
+        margin-top: 30px;
+    }
 }
 
 @media(max-width: 800px) {
-    
     nav {
         justify-content: space-between;
         padding: 0 30px;
         position: sticky;
     }
-
-    .nav-fb, .nav-ig{
+    .portfolio-text h2 {
+        font-size: 3em;
+        width: 9em;
+        left: 50%;
+    }
+    .nav-fb,
+    .nav-ig {
         display: none;
     }
-
-    .nav-button{
+    .nav-button {
         display: block;
     }
-
-    .nav-button.active .bar:nth-child(2){
+    .nav-button.active .bar:nth-child(2) {
         opacity: 0;
     }
-
-    .nav-button.active .bar:nth-child(1){
+    .nav-button.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-
-    .nav-button.active .bar:nth-child(3){
+    .nav-button.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-
-    .nav-links{
+    .nav-links {
         display: flex;
         position: fixed;
         left: 200%;
@@ -651,84 +685,66 @@ form {
         transition: 0.3s;
         background-color: #f4f4f4;
     }
-
-    .nav-links li{
+    .nav-links li {
         margin: 16px auto;
         font-size: 30px;
     }
-
-    .nav-links.active{
+    .nav-links.active {
         left: 0;
     }
-
-    .pakalpojumi-container{
+    .pakalpojumi-container {
         flex-direction: column;
         align-items: center;
     }
-
-    .satura-veidosana-div{
+    .satura-veidosana-div {
         margin-top: 70px;
     }
-    .soc-tikli-div{
+    .soc-tikli-div {
         margin-top: 30px;
     }
-    .satura-veidosana-div, .soc-tikli-div{
+    .satura-veidosana-div,
+    .soc-tikli-div {
         height: 180px;
         align-items: center;
     }
-
-    .komanda{
+    .komanda {
         flex-direction: column;
         margin-top: 0;
     }
-
-    .komanda div{
+    .komanda div {
         height: 300px;
     }
 }
 
-@media(max-width: 450px) {
-
-    .image-container{
-        background-image: url(Backgrounds/hill media background.png);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position-y: center;
+@media(max-width: 450px) and (orientation: portrait) {
+    .image-container {
         background-position-x: 20%;
-        background-size: cover;
-        opacity: 0.5;
+        scale: 1.5;
     }
-
-    .image-container{
-        height: 92vh;
-        width: 100vw;
-    }
-
-    .portfolio-text h2{
-        font-size: 50px;
+    .portfolio-text h2 {
+        /* font-size: 50px; */
         width: 350px;
         top: 50%;
         line-height: 90px;
     }
-
-    .pakalpojumi-h1, .partneri-h1, .par-mums-h1{
+    .pakalpojumi-h1,
+    .partneri-h1,
+    .par-mums-h1 {
         width: 300px;
         margin: auto;
         padding: 50px;
         font-size: 40px;
     }
-
-    .soc-tikli-div, .satura-veidosana-div{
+    .soc-tikli-div,
+    .satura-veidosana-div {
         width: 90vw;
         height: min-content;
         margin: 30px auto;
     }
-
-    .soc-tikli-div{
+    .soc-tikli-div {
         margin-bottom: 50px;
     }
-
-    .partneri-logo{
+    .partneri-logo {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 1fr 1fr 1fr;
@@ -736,59 +752,63 @@ form {
         margin: 30px auto;
         padding: 0;
     }
-
-    .partneri-logo img{
+    .partneri-logo img {
         padding: 0px;
     }
-
-    .partneri-logo-1, .partneri-logo-2, .partneri-logo-3, .partneri-logo-4, .partneri-logo-5{
+    .partneri-logo-1,
+    .partneri-logo-2,
+    .partneri-logo-3,
+    .partneri-logo-4,
+    .partneri-logo-5 {
         height: 100px;
         width: 100px;
     }
-
-    .partneri-logo-3{
+    .partneri-logo-3 {
         grid-column: 2;
         grid-row: 2;
     }
-    .partneri-logo-4{
+    .partneri-logo-4 {
         grid-column: 4;
         grid-row: 2;
     }
-    .partneri-logo-5{
+    .partneri-logo-5 {
         grid-column: 3;
         grid-row: 3;
     }
-
-    .komanda div{
+    .komanda div {
         width: 95vw;
     }
-
-    .contact-us{
+    .contact-us {
         height: fit-content;
         padding: 60px;
     }
-
-    .contact-us-left-div{
+    .contact-us-left-div {
         text-align: center;
         height: fit-content;
     }
-
-    .adrtel{
+    .adrtel {
         text-align: center;
         padding: auto;
         margin: 10px auto;
         width: 90vw;
     }
-
     form {
         width: 90vw;
     }
-
-    .contact-us-inputs input, .contact-us-inputs textarea{
+    .contact-us-inputs input,
+    .contact-us-inputs textarea {
         width: 90vw;
     }
-
     body {
         overflow-x: hidden;
+    }
+}
+
+@media(max-width: 450px) and (orientation: landscape) {
+    .portfolio-text h2 {
+        font-size: 3em;
+        top: 60vh;
+        left: 55%;
+        width: 500px;
     }
 }
