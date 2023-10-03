@@ -716,10 +716,10 @@ form {
         scale: 1.1;
     }
     .portfolio-text h2 {
-        /* font-size: 50px; */
-        width: 350px;
+        font-size: 3em;
+        width: 80vw;
         top: 50%;
-        line-height: 90px;
+        line-height: 2em;
     }
     .pakalpojumi-h1,
     .partneri-h1,
