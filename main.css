@@ -156,7 +156,7 @@ nav {
 }
 
 .image-container {
-    background-image: url(Backgrounds/hill_media_background\ \(1\).png);
+    background-image: url(bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
