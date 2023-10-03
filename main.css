@@ -797,11 +797,10 @@ form {
     }
 }
 
-@media(max-width: 450px) and (orientation: landscape) {
+@media(max-width: 800px) and (orientation: landscape) {
     .portfolio-text h2 {
         font-size: 3em;
-        top: 70vh;
-        left: 55%;
-        width: 12em;
+        top: 60vh;
+        width: 9em;
     }
 }
