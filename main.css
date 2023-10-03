@@ -799,6 +799,9 @@ form {
 }
 
 @media(max-width: 800px) and (orientation: landscape) {
+    .image-container{
+        background-attachment: scroll;
+    }
     .portfolio-text h2 {
         font-size: 3em;
         top: 60vh;
