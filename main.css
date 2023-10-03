@@ -156,7 +156,7 @@ nav {
 }
 
 .image-container {
-    background-image: url(Backgrounds/harry-cunningham-7L2h4zTYiNI-unsplash.jpg);
+    background-image: url(Backgrounds/hill_media_background\ \(1\).png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -800,8 +800,8 @@ form {
 @media(max-width: 450px) and (orientation: landscape) {
     .portfolio-text h2 {
         font-size: 3em;
-        top: 60vh;
+        top: 70vh;
         left: 55%;
-        width: 10em;
+        width: 12em;
     }
 }
