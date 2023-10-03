@@ -713,7 +713,7 @@ form {
 @media(max-width: 450px) and (orientation: portrait) {
     .image-container {
         background-size: cover;
-        scale: 1.1;
+        scale: 0.1;
     }
     .portfolio-text h2 {
         font-size: 3em;
