@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 * {
@@ -29,13 +30,6 @@ h2 {
 
 body {
     background-color: #121212;
-}
-
-#pakalpojumi,
-#partneri,
-#par-mums,
-#contact-us {
-    scroll-margin-top: 80px;
 }
 
 h1,
@@ -719,7 +713,6 @@ form {
 @media(max-width: 450px) and (orientation: portrait) {
     .image-container {
         background-position-x: 20%;
-        background-size: cover;
     }
     .portfolio-text h2 {
         /* font-size: 50px; */
@@ -809,6 +802,6 @@ form {
         font-size: 3em;
         top: 60vh;
         left: 55%;
-        width: 500px;
+        width: 10em;
     }
 }
