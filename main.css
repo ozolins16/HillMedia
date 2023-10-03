@@ -158,11 +158,10 @@ nav {
 .image-container {
     background-image: url(Backgrounds/bg.jpg);
     background-attachment: fixed;
-    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 92vh;
-    width: 100%;
+    width: 100vw;
     opacity: 0.5;
 }
 
@@ -712,9 +711,10 @@ form {
 
 @media(max-width: 450px) and (orientation: portrait) {
     .image-container {
-        background-size: cover;
-        scale: 0.1;
+        background-attachment:scroll;
     }
+    
+
     .portfolio-text h2 {
         font-size: 3em;
         width: 80vw;
