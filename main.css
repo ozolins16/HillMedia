@@ -124,10 +124,6 @@ nav {
     height: 20px;
 }
 
-.nav-button {
-    display: none;
-}
-
 
 /* Hamburger */
 
@@ -711,10 +707,8 @@ form {
 
 @media(max-width: 450px) and (orientation: portrait) {
     .image-container {
-        background-attachment:scroll;
+        background-attachment: scroll;
     }
-    
-
     .portfolio-text h2 {
         font-size: 3em;
         width: 80vw;
@@ -799,7 +793,7 @@ form {
 }
 
 @media(max-width: 800px) and (orientation: landscape) {
-    .image-container{
+    .image-container {
         background-attachment: scroll;
         background-size: cover;
     }
@@ -807,5 +801,8 @@ form {
         font-size: 3em;
         top: 60vh;
         width: 9em;
+    }
+    .nav-links li {
+        height: 8vh;
     }
 }
